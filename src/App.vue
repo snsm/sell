@@ -1,28 +1,32 @@
 <template>
-  <div id=app>
+  <div id="app">
     <v-header></v-header>
     <div class="tab">
       <div class="tab-item">
-        <a>商品</a>
+        <router-link to="/goods">商品</router-link>
       </div>
       <div class="tab-item">
-        <a>评论</a>
+        <router-link to="/ratings">评论</router-link>
       </div>
       <div class="tab-item">
-        <a>商家</a>
+        <router-link to="/seller">商家</router-link>
       </div>
     </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+
 import header from './components/header/header'
+import goods from 'components/goods/goods'
+import geller from 'components/seller/seller'
+import ratings from 'components/ratings/ratings'
 
 export default {
-  name: 'app',
   components: {
     'v-header':header
-  }
+  },
 }
 </script>
 
