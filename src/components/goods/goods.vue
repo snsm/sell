@@ -27,7 +27,7 @@
                             </div>
                             <div class="price">
                                 <span class="now">￥{{ food.price }}</span>
-                                <span v-show="food.oldPrice">{{ food.oldPrice }}</span>
+                                <span v-show="food.oldPrice" class="old">{{ food.oldPrice }}</span>
                             </div>
                         </div>
                     </li>
@@ -148,4 +148,39 @@
         font-size: 14px;
         color: rgb(7,17,27);
     }
+    .desc, .extra{
+        line-height: 10px;
+        font-size: 10px;
+        color: rgb(147,153,159);
+    }
+    .desc{
+        line-height: 12px;
+        margin-bottom: 8px;
+    }
+    .extra{
+
+    }
+    .count{
+        margin-right: 12px;
+    }
+    .price{
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .now{
+        margin-right: 8px;
+        font-size: 14px;
+        color: rgb(240,20,20);
+    }
+    .old{
+        text-decoration: line-through;
+        font-size: 10px;
+        color: rgb(147,153,159);
+    }
+    .cartcontrol-wrapper{
+        position: absolute;
+        right: 0;
+        bottom: 12px;
+    }
+
 </style>
