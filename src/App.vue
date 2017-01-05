@@ -46,6 +46,7 @@ export default {
 </script>
 
 <style>
+
 .tab{
     display: flex;
     width: 100%;
